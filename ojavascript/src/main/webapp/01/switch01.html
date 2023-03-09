@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	var par = parseInt(prompt("1~7사이의 정수를 입력해주세요","1~7"));
+	
+	if (par<1 || par>7) document.write("잘못 입력했습니다.")
+	else if (isNaN(par)) document.write("숫자가 아닙니다 .")
+	else {
+		switch (par) {
+		case 1: document.write("1 입력됨".fontcolor("red"));
+		break;
+		case 2: document.write("2 입력됨".fontcolor("orange"));
+		break;
+		case 3: document.write("3 입력됨".fontcolor("yellow"));
+		break;
+		case 4: document.write("4 입력됨".fontcolor("green"));
+		break;
+		case 5: document.write("5 입력됨".fontcolor("blue"));
+		break;
+		case 6: document.write("6 입력됨".fontcolor("navy"));
+		break;
+		default: document.write("7 입력됨".fontcolor("violet"));
+		break;
+		}
+	}
+</script>
+</head>
+<body>
+	
+	<h1>swith</h1>
+	<h4>1~7사이의 숫자를 입력</h4>
+	<h4>1~7사이의숫자아니면 ->잘못된 입력</h4>
+	<h4>isNaN이면 ->숫자가 아님</h4>
+	<h4>1~7사이의 숫자면 -> switch 문으로 빨주누초파남부</h4>
+	
+	
+</body>
+</html>

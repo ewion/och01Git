@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var color = ["red","orange","yellow","green","blue","navy","violet"];
+	function chk(num) {
+		document.body.style.backgroundColor = color[num];
+	}
+</script>
+</head>
+<body bgcolor="black">
+	<table border="1" width="200" height="80">
+		<tr>
+			<td bgcolor="red" onmousemove=" chk(0)"></td>
+			<td bgcolor="orange" onmousemove=" chk(1)"></td>
+			<td bgcolor="green" onmousemove=" chk(2)"></td>
+			<td bgcolor="yellow" onmousemove=" chk(3)"></td>
+			<td bgcolor="blue" onmousemove=" chk(4)"></td>
+			<td bgcolor="navy" onmousemove=" chk(5)"></td>
+			<td bgcolor="violet" onmousemove=" chk(6)"></td>
+	</table>
+</body>
+</html>

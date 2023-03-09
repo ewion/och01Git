@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">	
+	//hw
+	// fgcolor = color[num]
+	// bgcolor = color[num-1]
+	// num 0일때 bgColor = color[6] 로직으로
+	// 글자색은 선택한색, 배경색은 선택한색-1
+	
+	var color = ["red","orange","yellow","green","blue","navy","violet"];
+
+	function chk(num) {
+		document.fgColor = color[num];
+		if (num==0) document.body.style.backgroundColor = color[6];
+	 	else 	document.body.style.backgroundColor = color[num-1];
+	 		
+		
+
+	}
+</script>
+</head>
+<body bgcolor="black">
+	<h1>dom 색상바꾸기 FgColor</h1>
+	<table border="1" width="200" height="80">
+		<tr>
+			<td bgcolor="red" onmousemove="chk(0)"></td>
+			<td bgcolor="orange" onmousemove="chk(1)"></td>
+			<td bgcolor="yellow" onmousemove="chk(2)"></td>
+			<td bgcolor="green" onmousemove="chk(3)"></td>
+			<td bgcolor="blue" onmousemove="chk(4)"></td>
+			<td bgcolor="navy" onmousemove="chk(5)"></td>
+			<td bgcolor="violet" onmousemove="chk(6)"></td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	th {
+		padding: 15px /* 셀 테두리와 내용 사이의 간격(패딩) */
+	}
+</style>
+</head>
+<body>
+	
+	<h1>개인연락처</h1>
+	<table border="1">
+		<colgroup>
+			<!-- 순서로 구별 -->
+			<col style="width: 100px">
+			<col style="width: 300px">
+			<col style="width: 100px">
+			<col style="width: 300px">
+			
+		</colgroup>
+		<tr>
+			<th>이름</th>
+			<td></td>
+			<th>연락처</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>주소</th>	
+			<td colspan = "3"></td> 
+			<!-- 컬럼을 n개로 확장시켜 보여주기, 
+			주소위에는 이름,이름칸,연락처,연락처칸이 있기 때문에 colspan이없다면 이름칸밑에만 칸이있음 -->
+		<tr>
+			<th>자기소개</th>
+			<td colspan = "3"></td>
+		</tr>
+	</table>
+</body>
+</html>

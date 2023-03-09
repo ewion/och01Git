@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//num1 없으면 -> 첫번째 숫자 입력 하세요 ? + focus
+	// num1 문자면 -> 숫자1가 뭔지 몰라요! 헐 ?  + focus
+	// num2 없으면 -> 두번째 숫자 입력 하세요 ? + focus
+	// num2 문자면 -> 숫자2가 뭔지 몰라요! 헐 ?  + focus
+	function chk() {
+		if(!frm.num1.value) {
+			alert("첫번째 숫자 입력 하세요");
+			frm.num1.focus();
+			return false;
+		} else if (isNaN(frm.num1.value)) {
+			alert("숫자가 먼지 모르나?(num1)");
+			frm.num1.focus();
+			frm.num1.value = "";
+			return false;
+		}
+		if(!frm.num2.value) {
+			alert("두번째 숫자 입력 하세요");
+			frm.num2.focus();
+			return false;
+		} else if (isNaN(frm.num2.value)) {
+			alert("숫자가 먼지 모르나?(num2)");
+			frm.num2.value = "";
+			return false;
+		}
+		return true;
+	}
+</script>
+</head>
+<body>
+	<form action="Num" name="frm" onsubmit="return chk()">
+		첫번째 숫자 <input type="text" name="num1"><p>
+		두번째 숫자 <input type="text" name="num2"><p>
+		<input type="submit" value="확인">
+	</form>
+</body>
+</html>

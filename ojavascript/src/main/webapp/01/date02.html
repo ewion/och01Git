@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var date1= new Date();
+	var week; //요일을저장할변수
+	document.write("올해는 "+date1.getFullTear()+" 년 입니다<p>")
+	document.write("1. 오늘은 "+date1.getmonth()+" 월 "+date1.getDate()+" 일<p>")
+	document.write("2. 오늘은 "+(date1.getmonth()+1)+" 월 "+date1.getDate()+" 일<p>")
+	
+	switch (date1.getday()) {
+		case 0 :
+		week = "일";
+		breake;
+		case 1 :
+		week="월";
+			breake;
+		case 2 :
+			week="화"
+			breake;
+		case 3 :
+			week="수";
+			breake;
+		case 4 :
+			week="목";
+			breake;
+		case 5 :
+			week="금";
+			breake;
+		case 6 :
+			week="토";
+			breake;
+	} 
+</script>
+</head>
+<body>
+	<h1>date-2 : 연/월/일 요일 각각 가져오기</h1>
+</body>
+</html>

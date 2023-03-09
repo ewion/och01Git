@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	overImg = new Array();
+	outImg = new Array();
+	
+	for (var i = 0; i < 4; i++) {
+		overImg[i] = "../imagesjs/"+i+"over.jpg";
+		outImg[i] = "../imagesjs/"+i+"out.jpg";		
+	}
+	function ov(num) {
+		document.images[num].src=overImg[num];
+	}
+	function ot(num) {
+		document.images[num].src=outImg[num];
+	}
+	
+</script>
+</head>
+<body>
+	<h1>dom Image Menu Change</h1>
+	<img src="../imagesjs/0out.jpg" onmouseover="ov(0)" onmouseout="ot(0)"><p>
+	<img src="../imagesjs/1out.jpg" onmouseover="ov(1)" onmouseout="ot(1)"><p>
+	<img src="../imagesjs/2out.jpg" onmouseover="ov(2)" onmouseout="ot(2)"><p>
+	<img src="../imagesjs/3out.jpg" onmouseover="ov(3)" onmouseout="ot(3)">	
+</body>
+</html>

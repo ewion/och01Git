@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	ul {
+		list-style: none;
+	}
+	li {
+		display: inline;
+		float: left;
+		margin: 10px
+	}
+	li a {
+		padding: 5px 20px;
+		font-size: 14px;
+		color: blue;
+		text-decoration: none;
+	}
+	.flat {
+		background: blue;
+		color: white;
+	}
+	[class ~="button"] { /* button이 들어간 클래스 모두 */
+		border: 2px solid black;
+		box-shadow: rgba(0,0,0,0.4) 5px 5px;
+	}
+</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#">메뉴 1</a></li>
+		<li><a href="#">메뉴 2</a></li>
+		<li><a href="#" class="button">메뉴 3</a></li>
+		<!-- 클래스명은 띄어쓰기로 구분됨. flat button은 flat, button, flat button 3개로 구분하여 사용가능 -->
+		<li><a href="#" class="flat button" >메뉴 4</a></li>
+	</ul>
+</body>
+</html>

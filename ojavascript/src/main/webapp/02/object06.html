@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//.join 배열을 하나의 스트링으로 리턴, 매개변수를 넣을시 인덱스간에 매개변수출력
+	//Index   0     1     2				3
+	var arr = [1, true, "JavaScript","End"];
+	document.write("arr.join() -> "+arr.join()+"<br>");
+	document.write("arr.join() -> "+arr.join('+')+"<br>"); // 1+true+JavaScript+End
+	document.write("arr.join() -> "+arr.join(' ')+"<br>"); 
+	document.write("arr.join() -> "+arr.join('')+"<br>"); //딱붙여서 출력
+	
+	//.slice 인덱스번호를 매개변수n,m으로 받아 n부터 m전까지 출력(n이상, ,m미만) ,파이선문법과 동일
+	document.write("arr.slice(1, 2) -> "+arr.slice(1, 2)+"<br>");
+	document.write("arr.slice(1, 3) -> "+arr.slice(1, 3)+"<br>");
+	document.write("arr.slice(1) -> "+arr.slice(1)+"<br>");
+	
+	//.toString
+	document.write("arr.toString() -> "+arr.toString()+"<br>");
+</script>
+</head>
+<body>
+	<h1>object06</h1>
+</body>
+</html>

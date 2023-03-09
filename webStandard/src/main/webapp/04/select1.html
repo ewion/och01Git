@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body {
+		background-color: #ffe08c;
+	}
+	form fieldset {
+		margin-bottom: 20px;
+	}
+	form legend {
+		font-size: 15px;
+		font-weight: 600;
+	}
+	/* class가 reg인것 일괄적으로 디자인 */
+	.reg {
+		font-size: 14px;
+		width: 90px;
+		color: #339900;
+		font-weight: bold;
+		float: left;
+		text-align: right;
+		margin-right: 20px;
+	}
+	form ul li {
+		list-style: none;
+		margin: 15px 10px 5px;
+		font-size: 14px;
+	}
+	
+</style>
+</head>
+<body>
+	<h1>여름방학 특강 신청</h1>
+	<form action=""></form>
+		<fieldset>
+			<legend>수강 신청인</legend>
+			<ul>
+				<li>
+					<label class="reg" for="id">학번</label>
+					<input type="text" id="id">
+				</li>
+				<li>
+					<label class="reg" for="name">이름</label>
+					<input type="text" id="name">
+				</li>
+				<li>
+					<!-- 클래스를맞추는건 스타일을 동일하게 하겠다는것, 디자인을 동일하게 하겟다는것 -->
+					<label class="reg" >공과대학학과</label>
+					<select id="class" name="class">
+						<option value="archi">건축공학과</option>
+						<option value="mechanic">기계공학과</option>
+						<option value="indust">산업공학과</option>
+						<option value="elec">전기공학과</option>
+						<option value="computer" selected>컴퓨터공학과</option>
+						<option value="chemical">화학공학과</option>
+						
+					</select>
+				</li>
+			</ul>
+		</fieldset>
+</body>
+</html>

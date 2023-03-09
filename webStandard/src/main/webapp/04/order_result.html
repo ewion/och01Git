@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.container {
+		width:600px;
+		margin: 0 auto; 
+		}
+		/* 순서없는 목록에 적용할 스타일 */
+	/* 불릿 없앰 */
+	ul {
+		list-style-type: none; 
+	}
+	/* 라벨태그 안의 클래스가 title 모두 지정 */
+	label.title {
+		font-weight: bold;
+		width: 80px;
+		float: left;
+	}
+	div.centered {
+		text-align: center;
+	}
+	fieldset {
+		margin: 15px 10px;
+	}
+	fieldset legend {
+		font-weight : bold;
+		font-size: 18px;
+		color: purple;	
+	}
+	ul li {
+		margin-bottom: 10px;
+	}
+</style>
+</head>
+<body>
+	<form action="">
+		<div class ="container">
+			<h1>상품 주문서</h1>
+			<!-- 필드셋은 하나의 묶음, 레전드는 묶음의 제목 -->
+			<fieldset>
+				<legend>개인 정보</legend>
+				<ul>
+					<li>
+						<label for="uname" class="title">이름</label>
+						<input type="text" id="uname" placeholder="여백없이 입력" required>
+					</li>
+					<li>
+						<label for="tel1" class="title">연락처</label>
+						<input type="tel" id="tel1" placeholder="연락 가능한 번호">	
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>배송지 정보</legend>
+				<ul>
+					<li>
+						<label for="addr" class="title">주소</label>
+						<input type="text" size="40" id="addr" required>
+					</li>
+					<li>
+						<label for="tel2" class="title">전화번호</label>
+						<input type="tel" id="tel2" required>
+					</li>
+					<li>
+						<label for="comment" class="title">메모</label>
+						<textarea cols="40" rows="3" id="comment"></textarea>
+					</li>
+				</ul>	
+			</fieldset>
+			<div class="centered">
+				<input type="submit" value="주문하기">
+				<input type="reset" value="다시 작성">
+			</div>
+		</div>
+	</form>
+</body>
+</html>

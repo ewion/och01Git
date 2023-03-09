@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//java collection 의 map방식과 유사, 키에는 공백허용되지않는다
+	var man = {name:"홍길동", 나이:7, addr:"서울 마포"}
+	//var man = {name:"홍길동", 나 이:7, addr:"서울 마포"} 허용X
+	//var man = {name:"홍길동", "나 이":7, addr:"서울 마포"} 허용O
+	
+	//js의 객체조회방식
+	document.write("이름 1 : "+man.name+"<br>") //보통 사용방식 이거만 알면됨
+	document.write("이름 2 : "+man["name"]+"<br>")
+	document.write("나이 1 : "+man.나이+"<br>")
+	//document.write("나이 1 : "+man.나 이+"<br>") 허용X
+	document.write("나이 2 : "+man["나이"]+"<br>")
+	//document.write("나이 2 : "+man["나 이"]+"<br>") 허용O
+</script>
+</head>
+<body>
+	<h1>object01</h1>
+</body>
+</html>

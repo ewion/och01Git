@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//min
+	console.log("1-> "+Math.min(1, 10, -100, -10, 1000, 0));
+	console.log("2-> "+Math.min()); //비교할게 없어 Infinity 리턴
+	// 인수 중에 비교할 수 없는 값이 포함되어 있으면 NaN
+	console.log("3-> "+Math.min(1, 10, -100, -10, "문자열", 0));
+	//max
+	console.log("4-> "+Math.max(1, 10, -100, -10, 1000, 0));
+	console.log("5-> "+Math.max()); //비교할게 없어 Infinity 리턴
+	//인수 중에 비교할 수 없는 값이 포함되어 있으면 NaN
+	console.log("6-> "+Math.max(1, 10, -100, -10, "문자열", 0));
+	//round
+	console.log("r1-> "+Math.round(10.43));
+	console.log("r2-> "+Math.round(10.78));
+	console.log("r3-> "+Math.round(-10.52));
+	//floor 내림
+	console.log("f1-> "+Math.floor(10.43));
+	console.log("f2-> "+Math.floor(10.78));
+	console.log("f3-> "+Math.floor(-10.52));
+	//ceil 올림
+	console.log("c1-> "+Math.ceil(10.43));
+	console.log("c2-> "+Math.ceil(10.78));
+	console.log("c3-> "+Math.ceil(-10.52));
+</script>
+</head>
+<body>
+	<h1>math</h1>
+  <h4>Math 객체는 수학에서 자주 사용하는 상수와 함수들을 미리 구현해 놓은 자바스크립트 표준 내장 객체</h4>
+</body>
+</html>7

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//실무에서 많이 사용 
+	//id의 요소를 선택하여 객체에 넣음
+	var change = document.getElementById("text");
+	
+	//객체를 이용하여 이벤트 발생
+	function chgRedColor() {
+		change.style.color = "red";
+	}
+	function chgOrangeColor() {
+		change.style.color = "orange";
+	}
+	
+</script>
+</head>
+<body>
+	<h1>dom02 event를 통해 수행</h1>
+	<p id="text">기본색 검정</p>
+	<button ondblclick="chgRedColor()">빨간색</button><p>
+	<button onclick="chgOrangeColor()">오렌지색</button>
+	<!-- var_let2참고 -->
+	버튼을누르면 text태그가 색이변함
+	
+</body>
+
+</html>

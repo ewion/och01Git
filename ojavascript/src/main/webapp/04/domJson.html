@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	//***************
+	var wo = {"name":"강선규","addr":"인천"}
+	
+	//  json 객체를 String 객체로 변환
+	alert("JSON.stringfy(wo) -> "+JSON.stringfy(wo));
+
+	// parse 메소드는 string 객체를 json 객체로 변환
+	alert("JSON.parse(JSON.stringfy(wo)).name -> "+JSON.parse(JSON.stringfy(wo)).name);
+	alert("wo.name -> "+wo.name)
+	alert("wo.addr -> "+wo.addr)
+</script>
+</head>
+<body>
+	<h1>***dom Json***</h1>
+</body>
+</html>

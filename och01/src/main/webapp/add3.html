@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function chk() {
+		if(!frm.num.value) {
+			alert("숫자를 입력하세요");
+			frm.num.focus();
+			return false;
+		} else if (isNaN(frm.num.value)) {
+			alert("숫자를 입력하세요");
+			frm.num.focus();
+			frm.num.value ="";
+			return false;
+		}
+		return true; //오류발견되지않으면 true를 리턴하여 add3리퀘스트를 전송
+	}
+</script>
+</head>
+<body>
+	<h1>숫자를 입력하세요(1부터 num까지의 합계)</h1>
+	<form action="Add3" name="frm" onsubmit="return chk()"> 
+		<!-- 뷰단은 소문자, 서버단은 대문자로 시작 서버에 값을보내기전에 값이맞는지확인하는함수 onsubmit ,온서브밋의 함수가 참이면 action 실행, 거짓이면 폼에서 대기-->
+		숫자 :<input type="text" name="num"><p>
+		위치 :<input type="text" name="loc"><p>
+		<input type="submit" value="확인">
+	</form>
+</body>
+</html>

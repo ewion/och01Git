@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var banner = new Array();
+
+	for(var i=0; i<7; i++) {
+		banner[i] = "../imagesjs/"+i+".jpg";
+	}
+	
+	var	ranNumber = Math.random()*7;
+ 	document.write("<p>ranNumber = "+ranNumber);
+	var	ran = Math.floor(ranNumber)*7;
+	document.write("<p>ran = "+ran);
+	document.write("<p><image src = "+banner[ran]+">");
+	
+	// 랜덤으로 광고배너를 띄우는데 적합
+</script>
+</head>
+<body>
+	<h1>math02</h1>
+</body>
+</html>

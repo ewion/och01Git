@@ -1,0 +1,64 @@
+@charset "UTF-8";
+body {
+	font: 14px 맑은 고딕;
+}
+.container {
+	position: absolute;
+	width: 960px;
+	margin: 0p auto;
+	background-color: #fff;
+	border: 1px solid #E7E7E7;
+	}
+header {
+	position: relative;
+	height: 280px;
+	background-image: url('../images10/bg.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+header h1 {
+	position: absolute;
+	right: 20px;
+	bottom: 70px;
+	font-size: 3em;
+	color: #ffc;
+}
+
+header h2 {
+	position: relative;
+	color: #FF0;
+	text-shadow: 0px 1px 1px #000;
+}
+
+.navi {
+	position: relative;
+	background: #ccc;
+	margin-top: 5px;
+	width: 960;
+	height: 60;
+}
+
+.navi ul *{
+	list-style: none;
+	height: 40px;
+	padding-top: 10px; 
+	padding-bottom: 5px;
+}
+
+.navi ul li {
+	display: inline;
+	float: left;
+	font-size: 15px;
+	margin: 30px;
+}
+
+.navi a, .navi a:visited{
+	padding: 10px 5px 5px 35px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.navi a:hover{
+	color: yellow;
+}
+

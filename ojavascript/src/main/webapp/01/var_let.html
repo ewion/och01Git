@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var 	varName = "varName1...";
+	let		letName	= "letName1...";
+	const	conName = "conName1...";
+	
+	varName = 100;
+	document.write(varName+"<br>")
+	
+	letName = 300;
+	document.write(letName+"<br>")
+	//  변수 재선언, 변수 재할당 모두 불가능, 에러발생시켜줌
+	// var는 재 선언 가능 , let은 재 선언 불가능
+	conName = 500;
+	document.write(conName+"<br>")
+	
+	var 	varName = "varName2...";
+	let		letName	= "letName2...";
+	
+	document.write(varName+"<br>");
+	document.write(letName+"<br>")
+</script>
+</head>
+<body>
+	<h1>Var let 비교</h1>
+</body>
+</html>
